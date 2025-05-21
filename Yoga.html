@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My yoga class</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: plum;
+      }
+
+      h2 {
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid grey;
+        padding: 15px;
+        background-color: plum;
+      }
+
+      img {
+        border-radius: 10px;
+        width: 600px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify;
+        max-width: 600px;
+        margin: 20px auto 0 auto;
+      }
+
+      button {
+        width: 100%;
+        background: plum;
+        color: black;
+        border: none;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 30px;
+        box-shadow: 0 15px 20px rgba(233, 109, 109, 0.3);
+        margin: 20px 0;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Yoga</h1>
+    <h2>Discipline</h2>
+    <img src="images/Yoga.jpeg" alt="Person doing yoga pose" />
+
+    <p>
+      Yoga offers physical and mental health benefits for people of all ages.
+      And, if you're going through an illness, recovering from surgery or living
+      with a chronic condition, yoga can become an integral part of your
+      treatment and potentially hasten healing.
+      <br />
+      <br />
+      <a
+        href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-benefits-of-yoga"
+      >
+        Learn more on Johns Hopkins Medicine
+      </a>
+    </p>
+    <button>Join a class</button>
+
+    <footer>
+      &copy; 2025 My Yoga Class. All rights reserved. | Contact:
+      info@yogaclass.com
+    </footer>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(`Thank you ${name} for your interest, we'll be in touch.`);
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
